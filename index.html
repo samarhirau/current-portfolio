@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/icon-app.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style1.css">
+  <link rel="stylesheet" href="./assets/preloader/style.css">
+  <link rel="stylesheet" href="./assets/resume/style.css">
+  <link rel="stylesheet" href="./assets/toggle/toggle.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+  
+    <!-- icons link  -->
+    <script src="https://kit.fontawesome.com/bd8c15b492.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+    <!-- Import the component -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+<!-- preview -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+
+  
+<!-- LOaDER -->
+
+
+ <div id="preloader" class="preloader">
+  <div class="loader">
+    <div>
+      <ul>
+        <li>
+          <svg viewBox="0 0 90 120" fill="currentColor">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg viewBox="0 0 90 120" fill="currentColor">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg viewBox="0 0 90 120" fill="currentColor">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg viewBox="0 0 90 120" fill="currentColor">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg viewBox="0 0 90 120" fill="currentColor">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+        <li>
+          <svg viewBox="0 0 90 120" fill="currentColor">
+            <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+          </svg>
+        </li>
+      </ul>
+    </div><span>Loading <b>...</b></span>
+  </div>
+  </div> 
+
+  <!--
+    - #MAIN
+  -->
+<div id="content" class="hidden">
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Picsart_24-03-28_11-19-01-597.png" alt="SaMaR__HiRaU" width="80px">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="SAMAR HIRAU">Samar Hirau</h1>
+
+          <p class="title">Web developer</p>
+          <button  class="hire-btn">Hire Me</button>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/icons8-email-94.png" alt="email" width="20">
+              
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="samrhirau@gmail.com" class="contact-link">samrhirau@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/icons8-office-phone-94.png" alt="email" width="20">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+916265949149" class="contact-link"> 6265949149</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/icons8-calendar-94.png" alt="email" width="20">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-06-07">June 7, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <img src="./assets/images/icons8-location-94.png" alt="email" width="20">
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bhopal , MadhyaPradesh</address>
+            </div>
+
+          </li>
+
+        
+          <ul class="social-list">
+
+            <li class="social-item">
+              <a target="_blank" href="https://www.facebook.com/samar.hiraou" class="social-link">
+                <i class="fa-brands fa-facebook fa-bounce"></i>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a target="_blank" href="https://www.linkedin.com/in/samar-hirau-882529268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link">
+                <i id="linkdin" class="fa-brands fa-linkedin fa-bounce"></i>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a target="_blank" href="https://github.com/samarhirau" class="social-link">
+                <i class="fa-brands fa-github fa-bounce"></i>
+              </a>
+            </li>
+  
+            <li class="social-item">
+              <a target="_blank" href="https://www.instagram.com/samar_hiraou?igsh=aTJqN2FxZHdsdnRh " class="social-link">
+                <i class="fa-brands fa-instagram fa-bounce"></i>
+              </a>
+            </li>
+  
+          </ul>
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Home</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+          <li class="navbar-item">
+            <div  onclick="dark()" class="toggleWrapper">
+              <input type="checkbox" class="dn" id="dn"/>
+              <label for="dn" class="toggle">
+                <span class="toggle__handler">
+                  <span class="crater crater--1"></span>
+                  <span class="crater crater--2"></span>
+                  <span class="crater crater--3"></span>
+                </span>
+                <span class="star star--1"></span>
+                <span class="star star--2"></span>
+                <span class="star star--3"></span>
+                <span class="star star--4"></span>
+                <span class="star star--5"></span>
+                <span class="star star--6"></span>
+              </label>
+            </div>
+          </li>
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </ul>
+       
+
+      </nav>
+
+ <!--
+        - #HOME
+      -->
+
+      <article id="homepage1" class="about  active" data-page="home">
+
+        <header>
+          <h2 class="h2 article-title">Home</h2>
+        </header>
+        <!-- <canvas class="webgl"></canvas>
+        <div id="loader">
+          <h1>Loading</h1>
+        </div> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js"></script>
+<script src="https://unpkg.com/three@0.126.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://unpkg.com/three@0.126.0/examples/js/controls/OrbitControls.js"></script> -->
+
+        <img class="model" src="./assets/images/Group1.png" alt="">
+        <!-- <div class="dmodel">
+          <model-viewer  src="./assets/ToyCar.glb" ar camera-controls ></model-viewer>
+  
+        </div> -->
+        
+        <section class="home-text ">
+          <!-- <img style="position: relative;" class="model" width="100%" src="./assets/images/Picsart333.png" alt="drone"> -->
+
+          <!-- <img class="model" src="./assets/images/Website Building of Shopping Sale.gif" alt=""> -->
+          <p style="font-size: 20px; font-weight: 400;">
+            Hello, Welcome to my portfolio!
+          </p>
+         
+          
+
+          <!-- <p style="font-size: 25px; font-weight: 500; color: white; ;"> -->
+
+
+            <!-- <h2>I'm a <span id="element" class="auto-type"></span></h2> -->
+            <span >I'M </span>
+            <h1>SAMAR HIRAU</h1>
+         
+          
+          <p>
+            and I love what I do as a Front-End development.....
+          </p>
+          <input id="ch" type="checkbox">
+         <div class="readmore">
+          <p>
+            Here, you'll find a curated collection of my work, showcasing my skills, experiences, and passions. From web development to graphic design, I aim to demonstrate my dedication to creativity, innovation, and excellence.
+            Explore, engage, and let's connect to bring your ideas to life! 
+          </p>
+          <label for="ch">Show Less</label>
+        </div>
+        <label for="ch">Read More</label>
+        </section>
+       
+
+<footer>
+       
+  <hr style="margin-bottom:10px ;">
+  <!-- <div  class="scroller" data-speed="fast">
+    <ul  id="tagsInner" class="tag-list scroller__inner">
+      <li>UI/UX</li>
+      <li>CSS</li>
+      <li>SSG</li>
+      <li>HTML</li>
+      <li>SVG</li>
+      <li>Next.js</li>
+      <li>Tailwind</li>
+      <li>webdev</li>
+      <li>JS</li>
+      <li>webdev</li>
+      <li>TypeScript</li>
+      <li>React</li>
+    
+     
+   
+  </div> -->
+
+  <div  class="scroller" data-speed="fast">
+    <ul  id="tagsInner" class="tag-list scroller__inner">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JS</li>
+      <li>TypeScript</li>
+      <li>Tailwind</li>
+      <li>React</li>
+      <li>Next.js</li>
+      <li>SVG</li>
+      <li>SSG</li>
+      <li>CSS</li>
+      <li>animation</li>
+      <li>UI/UX</li>
+  
+   
+  </div><div  class="scroller" data-speed="fast">
+    <ul  id="tagsInner" class="tag-list scroller__inner">
+      <li>UI/UX</li>
+      <li>React</li>
+      <li>Next.js</li>
+      <li>animation</li>
+      <li>webdev</li>
+      <li>webdev</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>TypeScript</li>
+      <li>Tailwind</li>
+      <li>SVG</li>
+      <li>SSG</li>
+  
+   
+  </div>
+  
+
+  
+<!-- <img class="air" src="./assets/images/Saly-43.png" alt=""> -->
+
+<section class="social-icon">
+  <ul>
+    <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-google-plus-g" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+    <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+
+</section>
+
+</footer>
+
+
+
+
+
+    
+
+
+      
+      
+
+     
+
+       
+
+      </article>
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+        <img class="model" src="./assets/images/about-page.png" alt="">
+        <section class="about-text">
+          <p>
+            Hello there! I'm <u>SAMAR HIRAU</u>, a passionate and curious fresher web developer ready to dive into the world of coding and create amazing things on the web. I've recently finished Full Stack Web Development, where I learned the magic of turning code into functional and visually appealing websites.
+          </p>
+          <input id="ch1" type="checkbox">
+          <div class="readmore">
+          <p>
+            I have a strong foundation in HTML, CSS, and JavaScript, and I'm eager to learn more every day. I believe in clean and user-friendly design, and I'm excited to collaborate with clients to bring their visions to life online. Whether it's crafting responsive layouts or adding interactive elements, I'm dedicated to creating engaging web experiences that leave a lasting impression. Let's work together to make your online presence shine!"
+          </p>
+          <label for="ch1">Show Less</label>
+        </div>
+        <label class="sib" for="ch1">Read More</label>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/3d-casual-life-graphic-design-software-on-laptop.gif" alt="design icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+                
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/social-tablet-with-web-design-application.gif" alt="Web development icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/phone.gif" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/bendy-brand-identity-design-on-tablet.gif" alt="camera icon" width="50">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Logo Design</h4>
+
+                <p class="service-item-text">
+                  Transforming your vision into iconic logos that speak volumes.
+                </p>
+              </div>
+
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+     
+
+    
+
+
+
+     
+      
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <div id="adjust">
+          <h2 class="h2 article-title">Resume</h2>
+        </div>
+          <button onclick="previewImage()" id="downloadBtn" class="continue-application">
+            <div>
+                <div class="pencil"></div>
+                <div class="folder">
+                    <div class="top">
+                        <svg viewBox="0 0 24 27">
+                            <path d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z"></path>
+                        </svg>
+                    </div>
+                    <div class="paper"></div>
+                </div>
+            </div>
+            Resume
+        </button>
+        <div id="downloadInfo"></div>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <img  src="./assets/images/icons8-books-94.png" alt="">
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Graduation</h4>
+
+              <span>2021 — 2025</span>
+
+              <p class="timeline-text">
+                Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
+                quas molestias
+                exceptur.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Higher Secondary School</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est
+                omnis..
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Secondary school</h4>
+
+              <span>2016 — 2018</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <img src="./assets/images/icons8-certification-48.png" alt="">
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Front-End Developer</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas
+                molestias
+                exceptur.
+              </p>
+
+            </li>
+
+  
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Design</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Font-End</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Database Management</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Back-End </h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Mobile development </h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Ethical Hacking</h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <h3  style="margin-top: 20px;"  class="h3 skills-title">Professional Skills</h3>
+
+                   <section class="clients content-card">
+
+                    
+            
+                    <ul class="clients-list has-scrollbar">
+            
+                    
+                      <li class="clients-item">
+                      <div class="body">
+                        <!-- <p class="pr-skill-name">Communication</p> -->
+                        <div class="skill2">
+                           <div class="outer">
+                            <div class="inner">
+                                <div id="number1">
+                                   
+                                </div>
+                            </div>
+                           </div>
+                           <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                            <defs>
+                               <linearGradient id="GradientColor">
+                                  <stop offset="0%" stop-color="#e91e63" />
+                                  <stop offset="100%" stop-color="#673ab7" />
+                               </linearGradient>
+                            </defs>
+                            <circle id="circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
+                    </svg>
+                    
+                    </div>
+                </div>
+                <p class="pr-skill-name">Communication</p>
+              </li>
+            
+                <!-- 2 -->
+                <li class="clients-item">
+                  <div class="body">
+                    <!-- <p class="pr-skill-name">Team Work</p> -->
+                    <div class="skill2">
+                       <div class="outer">
+                        <div class="inner">
+                            <div id="number2">
+                               
+                            </div>
+                        </div>
+                       </div>
+                       <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                        <defs>
+                           <linearGradient id="GradientColor">
+                              <stop offset="0%" stop-color="#e91e63" />
+                              <stop offset="100%" stop-color="#673ab7" />
+                           </linearGradient>
+                        </defs>
+                        <circle id="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+                </div>
+            </div>
+            <p class="pr-skill-name">Team Work</p>
+          </li>
+            
+           <!-- 3 -->
+           <li class="clients-item">
+            <div class="body">
+              <!-- <p  class="pr-skill-name">Project Management</p> -->
+              
+              <div class="skill2">
+                 <div class="outer">
+                  <div class="inner">
+                      <div id="number3">
+                         
+                      </div>
+                  </div>
+                 </div>
+                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle id="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
+          </svg>
+          </div>
+      </div>
+      <p  class="pr-skill-name">Project Management</p>
+    </li>
+
+      <!-- 4 -->
+
+      <li class="clients-item">
+        <div class="body">
+          <!-- <p class="pr-skill-name">Creativity</p> -->
+          <div class="skill2">
+             <div class="outer">
+              <div class="inner">
+                  <div id="number4">
+                     
+                  </div>
+              </div>
+             </div>
+             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+              <defs>
+                 <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#e91e63" />
+                    <stop offset="100%" stop-color="#673ab7" />
+                 </linearGradient>
+              </defs>
+              <circle id="circle-4" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+      </div>
+  </div>
+  <p class="pr-skill-name">Creativity</p>
+</li>
+             </ul>
+            
+</section>
+            
+
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>College Project</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>College Project</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+
+
+
+
+            <!-- project_list -->
+
+
+
+
+          </div>
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    
+                    <ion-icon id="drawing-simulator" name="eye-outline"></ion-icon>
+                 
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="kuchh to">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">kuchh to</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">Design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="kuchh to">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Drawing App</h3>
+
+                <p class="project-category">kuchh to</p>
+
+              </a>
+            </li>
+
+
+            <!-- 
+              College project  -- Samar , Harsh , Balram , Aditya and Urvi
+             -->
+
+            <li class="project-item  active" data-filter-item data-category="college project">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.png" alt="Drawing App" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Harsh BHAi DEkho kya likhna PAd RHa Hai</h3>
+
+                <p class="project-category">College Project</p>
+
+              </a>
+            </li>
+
+          </ul> 
+          <h1>Under Development</h1>
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article> -->
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.900028484!2d77.24107930146504!3d23.199323872014066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1708971561589!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form method="post" action="https://formsubmit.co/samrhirau@gmail.com" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+</div>
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+<script>
+  
+document.addEventListener('DOMContentLoaded', () => {
+    let touchStartX = 0;
+    let touchEndX = 0;
+    let lastSwipeTime = 0;
+    const swipeThreshold = 300; // Time threshold in milliseconds for double swipe
+    const minSwipeDistance = 30; // Minimum distance in pixels for a valid swipe
+
+    function checkSwipeDirection() {
+        const currentTime = new Date().getTime();
+        const timeSinceLastSwipe = currentTime - lastSwipeTime;
+
+        if (timeSinceLastSwipe < swipeThreshold && Math.abs(touchEndX - touchStartX) > minSwipeDistance) {
+            toggleDarkMode();
+        }
+        lastSwipeTime = currentTime;
+    }
+
+    function toggleDarkMode() {
+        document.body.classList.toggle('dark-mode');
+        console.log('Dark mode toggled');
+    }
+
+    document.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    document.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        checkSwipeDirection();
+    }, false);
+});
+
+</script>
+  
+</body>
+ <!-- <script>
+  var typed = new Typed('#element', {
+    strings: ['samar'],
+    typeSpeed: 150,
+    backspeed:150,
+    loop:true
+  });
+</script> -->
+
+</html>
