@@ -385,6 +385,19 @@ main {
   #SIDEBAR
 \*-----------------------------------*/
 
+
+#downloadBtn{
+  background: var(--onyx);
+  color: var(--white-1);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  padding: 5px 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
 .sidebar {
   margin-bottom: 15px;
   max-height: 112px;
@@ -1135,10 +1148,10 @@ margin-top:100px;}
   border-radius: 1em;
   overflow: hidden;
   height: 0.8em;
-  box-shadow: -6px -6px 7px rgba(255, 255, 255, 0.285),
-  7px 7px 7px rgba(70, 70, 70, 0.12),
+  box-shadow: -6px -6px 7px rgba(255, 255, 255, 0.1),
+  7px 7px 7px rgba(70, 70, 70, 0.012),
   inset -6px -6px 7px rgba(255, 255, 255, 0.2),
-  inset 7px 7px 7px rgba(70, 70, 70, 0.12);
+  inset 7px 7px 7px rgba(70, 70, 70, 0.1);
   position: relative;
 }
 
@@ -1146,7 +1159,7 @@ margin-top:100px;}
   background:cadetblue;
   height: 100%;
   border-radius: inherit;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 /*-----------------------------------*\
   #PROFESSIONAL SKILL
@@ -1223,7 +1236,7 @@ box-shadow: inset 6px 6px 10px -1px rgba(70, 70, 70, 0.25),
   fill: none;
   stroke:  var(--onyx);
   opacity: 0.5;
-  /* stroke: var(--bg-gradient-grey); */
+  stroke: var(--bg-gradient-grey);
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
@@ -1236,7 +1249,7 @@ box-shadow: inset 6px 6px 10px -1px rgba(70, 70, 70, 0.25),
   fill: none;
   stroke:  var(--onyx);
   opacity: 0.5;
-  /* stroke:var(--bg-gradient-jet); */
+  stroke:var(--bg-gradient-jet);
   stroke-width: 20px;
   stroke-dasharray: 472;
   stroke-dashoffset: 472;
